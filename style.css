@@ -77,3 +77,12 @@ nav ul li:hover a,
   background-color: var(--navlinks2);
   color: var(--white);
 }
+/*************
+  header
+**************/
+header {
+  background: url(img/header.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
