@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@300;400;500;700&display=swap');
 :root {
   --blue: #4073de;
   --navlink1 : #ae5cfc;
@@ -17,6 +17,7 @@
   --fontSize: 16px;
   --headings: 'Montserrat', sans-serif;
   --bodyText:  'Roboto', sans-serif;
+  --fontFamily: 'Montserrat', sans-serif;
 }
 /************************
   basic styles
@@ -25,4 +26,54 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  font-size: var(--fontSize);
+  font-family: 'Roboto', sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+.flexBasic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/************************
+  nav
+************************/
+nav {
+  padding: 16px 0;
+}
+nav .logo {
+  font-size: 3rem;
+  color: var(--navlink1);
+  font-weight: 500;
+}
+nav .logo i {
+  font-size: 1.2rem;
+  position: relative;
+  top: -15px;
+  left: 2px;
+}
+nav ul {
+  width: 50%;
+}
+nav ul li a {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 35px 20px;
+}
+nav ul li:hover a,
+.current {
+  background-color: var(--navlinks2);
+  color: var(--white);
 }
